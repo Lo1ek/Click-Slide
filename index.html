@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click & slide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="title">CLICK & SLIDE</h1>
+    <div class="ranking">
+        <div class="rankingScore"></div>
+    </div>
+    <div class="puzzle">
+        <div class="buttons">
+            <button onclick="game.generate(3)">3x3</button>
+            <button onclick="game.generate(4)">4x4</button>
+            <button onclick="game.generate(5)">5x5</button>
+            <button onclick="game.generate(6)">6x6</button>
+        </div>
+        <div class="container">
+            <img src="img/img2.jpg" alt="img">
+        </div>
+        <div class="timer">
+            <button onclick="game.reset()">RESET</button>
+            <p class="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/colon.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/colon.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/dot.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+                <img src="cyferki/c0.gif" alt="time">
+            </p>
+        </div>
+    </div>
+    <div class="gallery">
+            <button class="left" onclick="galleryLeft()">&lt</button>
+            <button class="right" onclick="galleryRight()">&gt</button>
+    </div>
+    <div class="winScreen" onclick="game.winScreenHide()">
+        <p>Wygrałeś w trybie 4x4 w czasie 00:00.00</p>
+    </div>
+    <div class="solveContainer">
+        <button class="solve" onclick="game.solve(3)">SOLVE 3</button>
+        <button class="solve" onclick="game.solve(4)">SOLVE 4</button>
+        <button class="solve" onclick="game.solve(5)">SOLVE 5</button>
+        <button class="solve" onclick="game.solve(6)">SOLVE 6</button>
+    </div> 
+</body>
+</html>
